@@ -1,0 +1,16 @@
+.home-upcoming-event {
+	padding-top:80px;
+	padding-bottom:100px;
+	background-image:url(../images/bg-event2.jpg);
+}
+body .home-upcoming-event {
+	background-image:url(../images/bg-event2.jpg);
+}
+.home-news {
+	padding-top:100px;
+	padding-bottom:100px;
+	background-color:#262626;
+}
+body .home-news {
+	background-color: #efefef;
+}

@@ -1,0 +1,188 @@
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ---------------- LISTE EVENEMENTS -------------- */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+
+.masonry-blog .masonry-item .item-wrap {
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding:30px;
+  transition: 0.3s;
+}
+.masonry-blog .masonry-item .item-wrap:hover {
+  background: rgba(255, 255, 255);
+  -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.35);
+}
+.masonry-blog .masonry-item .item-wrap .item-title {
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+.masonry-blog .masonry-item .item-wrap .item-title a {
+  color: #0e0b16;
+}
+.masonry-blog .masonry-item .item-wrap .item-title a:hover {
+  color: #4717f6;
+}
+
+.masonry-blog .masonry-item .item-thumbnail {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.masonry-blog .masonry-item .item-excerpt a{
+  color: #0e0b16;
+}
+
+.masonry-blog .masonry-item .item-thumbnail .content-thumb img {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+.masonry-blog .masonry-item .item-thumbnail .content-thumb:hover img {
+  -webkit-filter: none;
+  filter: none;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+.masonry {
+  position: relative;
+}
+
+.masonry-item {
+  z-index: 2;
+  float: left;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.masonry-container {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  position: relative;
+  margin: 0 -15px;
+}
+.masonry-container > .masonry-item {
+  margin: 0 0 30px 0;
+  padding: 0 0px;
+  z-index: 1;
+}
+
+.masonry-container.columns-1 > .regular {
+  width: 100%;
+}
+.masonry-container.columns-2 > .masonry-item {
+  width: 50%;
+}
+.masonry-container.columns-2 > .wide {
+  width: 100%;
+}
+.masonry-container.columns-3 > .masonry-item {
+  width: 33.333%;
+}
+
+
+
+
+
+
+@media (max-width: 992px) {
+  .masonry-container.columns-3 > .masonry-item {
+    width: 50%;
+  }
+}
+.masonry-container.columns-3 > .wide {
+  width: 66.666%;
+}
+@media (max-width: 992px) {
+  .masonry-container.columns-3 > .wide {
+    width: 100%;
+  }
+}
+.masonry-container.columns-4 > .masonry-item {
+  width: 25%;
+}
+@media (max-width: 992px) {
+  .masonry-container.columns-4 > .masonry-item {
+    width: 50%;
+  }
+}
+.masonry-container.columns-4 > .wide {
+  width: 50%;
+}
+@media (max-width: 992px) {
+  .masonry-container.columns-4 > .wide {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .masonry-container[class*="columns-"] > .masonry-item {
+    width: 100% !important;
+  }
+  .masonry-blog .masonry-item .item-wrap .item-title {
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 991px) {
+  .masonry-blog .columns-2 .masonry-item .item-wrap {
+    padding: 10px;
+  }
+  .masonry-blog .columns-2 .masonry-item .item-wrap .content-social a {
+    margin: 0 7px;
+  }
+  .masonry-blog .columns-2 .masonry-item .item-wrap .content-social a i {
+    font-size: 12px;
+  }
+  .masonry-blog .columns-2 .masonry-item .item-wrap .content-social a .title-shared {
+    font-size: 10px;
+  }
+  .masonry-blog .columns-2 .masonry-item .item-wrap .category a {
+    font-size: 12px;
+  }
+  .masonry-blog .columns-2 .masonry-item .item-wrap .item-title {
+    font-size: 15px;
+    line-height: 20px;
+    margin: 10px 0 15px;
+  }
+  .masonry-blog .columns-2 .masonry-item .item-wrap .slide-event-img .slider-control {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+  .masonry-blog .columns-2 .masonry-item .item-wrap .item-thumbnail {
+    margin-bottom: 0;
+    padding-bottom: 15px;
+  }
+  .masonry-blog .columns-2 .masonry-item .item-wrap .item-thumbnail .author-avatar {
+    display: none;
+  }
+  .masonry-blog .columns-2 .masonry-item .item-wrap .item-news-content {
+    display: none;
+  }
+  .masonry-blog .columns-2 .masonry-item .item-wrap .read-more {
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+}
+
+
+.slide-event-img .slider-control {
+  background-color: #efefef;
+  color: #0e0b16;
+}
